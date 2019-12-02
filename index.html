@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>WebRTC</title>
+    </head>
+    <body>
+        <h1>WebRTC (<span id="status">init</span>)</h1>
+        <h3>1. Offer SDP</h3>
+        <textarea id="offer-sdp"></textarea>
+
+        <h3>2. Answer SDP</h3>
+        <textarea id="answer-sdp"></textarea>
+
+        <button id="connect">Connect</button>
+
+        <h3>Video</h3>
+        <video id="remote-video" width="320" height="240" controls playsinline autoplay>
+            Your browser does not support the video tag.
+        </video>
+        <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
+        <script src="index.js"></script>
+    </body>
+</html>
